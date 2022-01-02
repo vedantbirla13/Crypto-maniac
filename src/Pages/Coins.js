@@ -25,7 +25,6 @@ const Coins = () => {
         setCoin(data);
     }
     
-    // console.log(coin);
     
     
     useEffect(() => {

@@ -1,4 +1,4 @@
-import  React, { useState } from 'react';
+import React from 'react';
 import Drawer from '@mui/material/Drawer';
 import { Avatar, Button  } from '@mui/material';
 import { makeStyles } from '@mui/styles';
@@ -68,12 +68,15 @@ const useStyles = makeStyles({
     },
 });
 
-export default function userSidebar() {
 
-
-  const [state, setState] = useState({
+export default function UserSidebar() {
+  
+  const [state, setState] = React.useState({
     right: false,
   });
+  
+  const classes = useStyles();
+
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -85,7 +88,6 @@ export default function userSidebar() {
 
   const { user  , setAlert ,Watchlist, Coins, symbol } = CryptoState();
 
-  const classes = useStyles();
 
   const logOut = () =>{
     signOut(auth);
