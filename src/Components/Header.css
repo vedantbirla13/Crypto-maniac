@@ -1,0 +1,14 @@
+.header_title {
+    font-family: Montserrat;
+    color: gold;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.header_body{
+    justify-content: space-between;
+}
