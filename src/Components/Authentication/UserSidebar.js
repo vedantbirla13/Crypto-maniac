@@ -1,4 +1,4 @@
-import * as React from 'react';
+import  React, { useState } from 'react';
 import Drawer from '@mui/material/Drawer';
 import { Avatar, Button  } from '@mui/material';
 import { makeStyles } from '@mui/styles';
@@ -71,7 +71,7 @@ const useStyles = makeStyles({
 export default function userSidebar() {
 
 
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     right: false,
   });
 
